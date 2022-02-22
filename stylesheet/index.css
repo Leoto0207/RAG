@@ -1,0 +1,130 @@
+@import url('https://fonts.google.com/specimen/Manrope');
+
+/* general desgin */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Manrope;
+    font-weight: 800;
+    background: hsl(217, 19%, 24%);
+    min-height: 100vh;
+}
+
+/* content */
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(217, 19%, 38%);
+    padding: 0.5rem 0.5rem;
+    width: 35rem;
+    border-radius: 15px;
+    margin: 5rem 4rem; 
+}
+
+h5, .number{
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+
+}
+
+.box-of-adv{
+    padding: 0 5rem;
+}
+
+.box-of-adv > p{
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+hr, span{
+    text-align: center;
+    margin: 0 8px;
+}
+
+span{
+    color: white;
+}
+
+hr{
+    width: 10rem;
+}
+
+.stick, .stick2{
+    border: 1px solid hsl(193, 38%, 86%);
+    background: hsl(193, 38%, 86%);
+    padding: 10px 2px;
+    border-radius: 25px 25px;
+}
+
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+    border: 1px solid hsl(150, 100%, 66%);
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    background: hsl(150, 100%, 66%);
+    transition: box-shadow 0.2s linear 0.1s;
+}
+
+.circle:hover{
+    box-shadow: 2px 2px 30px hsl(150, 100%, 66%);
+    cursor: pointer;
+}
+
+/* mobile screen */
+
+@media (max-width: 650px){
+    .box{
+        width: 85%;
+        margin: 0 3rem;
+    }
+    .line{
+        padding: 0;
+    }
+    .box-of-adv{
+        padding: 0 3rem;
+        margin: 0;
+    }
+    hr{
+        width: 20vw;
+    }
+    .title{
+        padding: 0;
+        margin: 10px 0;
+    }
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        margin-top: 10rem;
+    }
+    .attribution a { 
+        color: white; 
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+.attribution a { 
+    color: white; 
+}
